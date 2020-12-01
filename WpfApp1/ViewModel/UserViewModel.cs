@@ -45,6 +45,12 @@ namespace WpfApp1.ViewModel
             users.Add(new User() { Id = 2, Name = "Sunil" });
             users.Add(new User() { Id = 3, Name = "Senthil" });
             users.Add(new User() { Id = 4, Name = "Madan" });
+            users.Add(new User() { Id = 5, Name = "Ajith" });
+            users.Add(new User() { Id = 6, Name = "Anil" });
+            users.Add(new User() { Id = 7, Name = "Vivek" });
+            users.Add(new User() { Id = 8, Name = "Abin" });
+
+            SelectedItem = Users.FirstOrDefault();
         }
 
         public void OnSearchExecute()

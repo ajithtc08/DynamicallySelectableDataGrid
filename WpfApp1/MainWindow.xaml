@@ -30,6 +30,7 @@
         <TextBox Margin="10" Height="40" Width="130" Text="{Binding Id}"></TextBox>
         <Button Content="Search" Height="40" Width="50" Grid.Column="1" Command="{Binding SearchCommand}" />
         <DataGrid x:Name="UserGrid" Grid.Row="1"
+                  VM:DataGridItemSelectionChangeManager.SelectingItem="{Binding Path=SelectedItem}"
                   Margin="10"  Grid.ColumnSpan="2" HorizontalAlignment="Stretch"
                   ItemsSource="{Binding Path=Users,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
                    SelectionMode="Single"
