@@ -10,8 +10,12 @@
         <VM:UserViewModel/>
     </Window.DataContext>
     <Window.Resources>
-        <Style TargetType="DataGrid" x:Name="DataGridRowStyle">
-
+        <Style TargetType="{x:Type DataGridCell}">
+            <Style.Triggers>
+                <Trigger Property="IsSelected" Value="True">
+                    <Setter Property="Background" Value="LightCoral"/>
+                </Trigger>
+            </Style.Triggers>
         </Style>
     </Window.Resources>
     <Grid>
